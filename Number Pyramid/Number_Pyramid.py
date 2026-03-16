@@ -1,12 +1,13 @@
 
-## Number Pyramid
+# Pyramid of Numbers
 
 print("Welcome to the Number Pyramid.")
 
 cont = 'y'
-while cont in ('y', 'yes'):
+while cont in ('y', 'yes'): # executes untill user exits
 
     row_num = input("\nEnter the number of rows for the pyramid (positive integer): ") 
+    
     try:
         row_num = int(row_num)
         avg = row_num - 1    
@@ -25,7 +26,7 @@ while cont in ('y', 'yes'):
         else:
             print("\nThe maximum allowed levels is 20. Please enter the number less than 20.")
     
-    except :
+    except : # Executes all kind of errors
         print("\nInvalid Input. Please enter a positive integer value.")
 
     cont = input("\nWould you like to create another pyramid? (y/n): ").lower()
