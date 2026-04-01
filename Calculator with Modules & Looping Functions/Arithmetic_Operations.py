@@ -95,3 +95,24 @@ def floor_div():
         print(f"\nSomething went wrong. Please try again. Error: {e}\n")
         logging.error("An error occured while Floor Division", exc_info=True)
 
+
+def mul_add(*num):
+
+    user_nums = mul_input(*num)
+    sum = 0
+    
+    for n in user_nums:
+        sum += n
+    
+    return print(f'\nThe addition of provided all numbers is {sum}\n')
+
+
+def mul_mul(*num):
+
+    user_nums = mul_input(*num)
+    mul = 1
+    
+    for n in user_nums:
+        mul *= n
+    
+    return print(f'\nThe multiplication of provided all numbers is {mul}\n')
