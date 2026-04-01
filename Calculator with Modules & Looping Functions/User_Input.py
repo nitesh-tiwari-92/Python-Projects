@@ -34,7 +34,7 @@ def continuation(statement):
     if user_ch in ['y', 'ye', 'yes']:
         return user_ch
     else:
-        exit
+        exit()
 
 
 def separate():
@@ -48,7 +48,7 @@ def separate():
     else:
         print('Thank you for choosing the Nitesh\'s Calculator!!')
         print('Please comeback later.')
-        exit
+        exit()
             
 
 def mul_input(*numbers):
