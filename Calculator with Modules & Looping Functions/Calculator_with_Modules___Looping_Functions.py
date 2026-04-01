@@ -59,10 +59,10 @@ while cont == 'Y':
     elif _choice_1 == 3:
 
         if _choice_2 == 1:
-            result = add()
+            result = mul_add()
         
         elif _choice_2 == 2:
-            result = mul()
+            result = mul_mul()
 
     cont = continuation("Do you want to perform another operation? (Y/N): ")
 
